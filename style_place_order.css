@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nanbar */
+/* nav_row1 */
+.nav_row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+}
+/* left_nav */
+.left_nav{
+    margin-left: 60px;
+    display: flex;
+    position: relative;
+}
+/* left_nav input */
+.left_nav input{
+    border: none;
+    width: 250px;
+    padding-left: 40px;
+    transition: 0.6s;
+    height: 30px;
+}
+.left_nav input:focus{
+    outline: none;
+    padding-left: 25px;
+}
+.left_nav input::placeholder{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(152, 152, 152);
+}
+.left_nav i{
+    position: absolute;
+    color: rgb(167, 167, 167);
+    bottom: 9px;
+}
+/* for display the "x" icon */
+.search-icon {
+    display: none;
+}
+/* midle_nav */
+.midle_nav{
+    width: 155px;
+    height: 45px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midle_nav a{
+    text-decoration: none;
+}
+.midle_nav button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px purple;
+}
+.midle_nav button:hover{
+    box-shadow: 0px 0px 7px purple;
+}
+/* right_nav */
+.right_nav{
+    margin-right: 60px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_nav a{
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    transition: 0.4s;
+    margin: 10px;
+}
+.right_nav a:hover{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+.right_nav .last_icon .number{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: purple;
+    font-size: 0.9rem;  
+    top: -9px;
+    right: 10px;
+    transition: 0.3s;
+}
+.right_nav .last_icon:hover .number{
+    top: -13px;
+    box-shadow: 0px 2px 6px black;
+}
+/* line */
+.line{
+    border: none;
+    border-top: 1px solid rgb(236, 236, 236);
+    width: 100%;
+    margin-top: 50px
+}
+/* nav_row2 */
+.nav_row2{
+    margin-left: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav_row2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_row2 ul li{
+    position: relative;
+}
+.nav_row2 ul li .fa-angle-down{
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    right: 0;
+}
+.nav_row2 ul li a{
+    display: block;
+    padding: 20px 25px;
+    position: relative;
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.nav_row2 ul li a:hover{
+    color: purple;
+}
+.nav_row2 ul li:hover{
+    color: purple;
+}
+.nav_row2 ul li .dropdown{
+    margin-top: -5px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    border-top: 2px solid purple;
+    background-color: white;
+}
+.nav_row2 ul li .dropdown li {
+    width: 230px;
+    display: block;
+}
+.nav_row2 ul li .ABOUT{
+    color: purple;
+}
+.nav_row2 ul li .dropdown li:hover {
+    background-color: rgb(231, 231, 231);
+}
+.nav_row2 ul li .dropdown li a{
+    padding: 10px 0px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: flex-start;
+    display: block;
+    color: rgb(177, 177, 177);
+}
+.nav_row2 ul li:hover ul.dropdown {
+    display: block;
+}
+/* nav_row3 */
+.nav_row3{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(244, 243, 243);
+    padding:0px 200px ;
+}
+.nav_row3 ul{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+.nav_row3 ul li{
+    margin: 0 2px;
+    font-size: 20px;
+}
+.nav_row3 ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: sans-serif;
+    transition: 0.4s;
+}
+.nav_row3 ul li .home{
+    color: purple;
+}
+.nav_row3 ul li a:hover{
+    color: purple;
+}
+
+/* landing1 */
+.landing1{
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.landing1 .fa-check{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2rem;
+    color: white;
+    line-height: 4.2rem;
+    background-color: #28a745;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border-radius: 50%;
+}
+.landing1 h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.8rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.landing1 h3{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.landing1 button{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: purple;
+    border-color: purple;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.landing1 button:hover{
+    margin-top: -3px;
+    background-color: #554dd1;
+    border-color: #554dd1;
+    box-shadow: 0px 4px 10px black;
+}
+
+/* footer_store */
+.footer_store{
+    margin-top: -100px;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_store ul{
+    list-style: none;
+}
+/* footer_store h2 */
+.footer_store h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 30px 0;
+}
+/* .footer_store p */
+.footer_store p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: rgb(156, 149, 149);
+    line-height: 2.8rem;
+    transition: 0.5s;
+}
+.footer_store p:hover{
+    cursor: pointer;
+    color: purple;
+}
+/* footer_container_coulm1 */
+.footer_container_coulm1{
+    margin-left: 140px;
+    margin-top: -20px;
+}
+/* footer_container_coulm2 */
+.footer_container_coulm2{
+    margin-top: 22px;
+}
+/* footer_container_coulm3 */
+.footer_container_coulm3{
+    margin-top: 22px;
+}
+/* footer_container_coulm4 */
+.footer_container_coulm4 img{
+    width: 280px;
+    height: 130px;
+    border-radius: 5px;
+}
+.footer_container_coulm4 p{
+    color: purple;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.footer_container_coulm4 p:hover{
+    color: rgb(71, 71, 243);
+}
+.footer_container_coulm4 .promo{
+    color: rgb(156, 149, 149);
+    cursor: pointer;
+}
+/* footer_container_coulm5 */
+.footer_container_coulm5{
+    width: 300px;
+    height: 400px;
+    margin-right: 60px;
+    margin-top: 115px;
+    position: relative;
+}
+.footer_container_coulm5 i{
+    position: absolute;
+    color: purple;
+}
+.footer_container_coulm5  .fa-location-dot{
+    position: absolute;
+    top: 87px ;
+}
+.footer_container_coulm5 ul li .location{
+    margin-left: 25px;
+    width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.footer_container_coulm5  .fa-phone{
+    position: absolute;
+    top: 145px ;
+}
+.footer_container_coulm5 ul li .phone{
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 250px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+.footer_container_coulm5  .fa-envelope{
+    position: absolute;
+    top: 182px ;
+}
+.footer_container_coulm5 ul li a{
+    text-decoration: none;
+}
+.footer_container_coulm5 ul li .email{
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 250px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+.footer_container_coulm5 ul li h3{
+    margin-top: 70px;
+    width: 250px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+.footer_container_coulm5 ul li input{
+    width: 225px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+    position: relative;
+    border: 1px solid rgb(111, 110, 110);
+}
+.footer_container_coulm5 ul li input:focus{
+    border: 1px solid purple;
+    outline: purple;
+}
+.footer_container_coulm5 ul li input::placeholder{
+    padding: 10px;
+}
+.footer_container_coulm5 ul li button{
+    position: absolute;
+    bottom: 27px;
+    right: 77px ;
+    width: 75px;
+    height: 45px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: purple;
+    border-color: purple;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer_container_coulm5 ul li button:hover{
+    background-color: #554dd1;
+    border-color: #554dd1;
+    box-shadow: 0px 4px 10px black;
+}
+/* copyright */
+.copyright{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: gray;
+}
+.copyright .fa-heart{
+    font-size: 18px;
+    text-align: center;
+}
+.copyright .owner{
+    color: purple;
+    font-weight: 600;
+}
+.copyright .owner:hover{
+    color: #554dd1;
+    font-weight: 600;
+    cursor: pointer;
+} 

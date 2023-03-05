@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belal Sabry/Check out</title>
+    <link rel="stylesheet" href="style_check_out.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start header  -->
+    <header>
+        <!-- nav_row1 -->
+        <nav class="nav_row1">
+        <!-- left_nav -->
+        <div class="left_nav">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <input type="search" name="search" id="search" placeholder="Search">
+            <span class="search-icon">&times;</span>
+        </div>
+        <!-- midle_nav -->
+        <div class="midle_nav">
+            <a href="./index.html"><button >Belal Serag</button> </a>
+        </div>
+        <!-- right_nav -->
+        <div class="right_nav">
+            <a href="#" title="Icon"><i class="fa-solid fa-user fa-5xs"></i></a>
+            <a href="#" title="Icon"><i class="fa-regular fa-heart "></i></a>
+            <a class="last_icon" href="#" title="Icon"><i class="fa-solid fa-cart-shopping"></i>
+            <span class="number">2</span>
+            </a>
+        </div>
+    </nav>
+    <!-- line -->
+    <hr class="line">
+    <!-- nav_row2 -->
+    <nav>
+        <div class="nav_row2">
+            <ul>
+                <li><a href="./index.html" title="HOME">HOME</a>
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                    <ul class="dropdown">
+                    <li><a href="#">Menu One</a> </li>
+                    <li><a href="#">Menu Two</a> </li>
+                    <li><a href="#">Menu Three</a> </li>
+                    </ul></li>
+                <li><a href="./about.html" title="ABOUT" >ABOUT</a>
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                    <ul class="dropdown">
+                        <li><a href="#">Menu One</a> </li>
+                        <li><a href="#">Menu Two</a> </li>
+                        <li><a href="#">Menu Three</a> </li>
+                        </ul></li>
+                <li><a href="./shop.html" title="SHOP" class="shop">SHOP</a></li>
+                <li><a href="#" title="CATALOGUE">CATALOGUE</a></li>
+                <li><a href="#" title="NEW ARRIVALS">NEW ARRIVALS</a></li>
+                <li><a href="#" title="CONTACT">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav_row3 -->
+    <nav>
+        <div class="nav_row3">
+            <ul>
+                <li ><a class="home" href="./index.html" title="home"><h4>Home</h4></a></li>
+                <li>/</li>
+                <li><h4>Cart</h4></li>
+                <li>/</li>
+                <li><h5>Checkout</h5></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!-- End header  -->
+    <!-- landings -->
+    <main>
+    <!-- landing -->
+    <section>
+        <div class="landing">
+        <div class="landing_header">
+            <h4>Returning customer? <a href="./check_out.html">Click here</a>  to login</h4></div>
+        <div class="landing_container">
+            <div class="left_landing">
+                <h2>Billing Details</h2>
+                <div class="billing_details">
+                    <form action="./place_order.html" method="post">
+                        <label for="Country ">Country <span class="star">*</span></label>
+                        <select name="Country " id="Country " required>
+                            <option value="Select a country">Select a country</option>
+                            <option value="Bengladsh">Bengladsh </option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Bahrin">Bahrin</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Turkey">Turkey</option>
+                        </select>
+                        <table>
+                            <tr><td><label for="First Name">First Name <span class="star">*</span></label></td>
+                                <td><label for="Last Name">Last Name <span class="star">*</span></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="First Name" id="First Name" required></td>
+                                <td><input type="text" name="Last Name" id="Last Name" required ></td>
+                            </tr>
+                        </table>
+                        <label for="Company Name">Company Name </label>
+                        <input type="text" class="company_name_input" name="Company Name" id="Company Name">
+                        <label for="Address">Address</label>
+                        <input type="text" class="address_input" name="Address" id="Address" required placeholder="Street address">
+                        <input type="text" class="address_input" name="Address2" id="Address2" placeholder="Apartment,suite,unit etc,(optional)">
+                        <table>
+                            <tr><td><label for="State">State / Country <span class="star">*</span></label></td>
+                                <td><label for="Posta">Posta / Zip <span class="star">*</span></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="State " id="State" required></td>
+                                <td><input type="text" name="Posta" id="Posta" required></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr><td><label for="Email">Email Address <span class="star">*</span></label></td>
+                                <td><label for="Phone">Phone <span class="star">*</span></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="Email" id="Email" required></td>
+                                <td><input type="tel" class="phone_input" name="Phone" id="Phone" placeholder="Phone Number" required></td>
+                            </tr>
+                        </table>
+                        <ul>
+                            <li><span><input class="create_an_account_input" type="checkbox" name="Create_an_account" id="Create_an_account"></span>
+                                <span><label class="create_an_account_label" for="Create_an_account?">Create an account?</label></span></li>
+                                <li><span><input class="create_an_account_input" type="checkbox" name="Ship" id="Ship"></span>
+                                    <span><label class="create_an_account_label" for="Ship">Ship To A Different Address?</label></span></li>         
+                        </ul>
+                        <label class="textarea_lable" for="Notes">Order Notes </label>
+                        <textarea name="Notes" id="Notes" cols="60" rows="10" placeholder="Write your notes here..."></textarea> 
+                        
+                        <!--
+                        
+                        <label for="Notes">Order Notes </label>
+                        <textarea name="Notes" id="Notes" cols="30" rows="10"></textarea> -->
+                    </form>
+                </div>
+            </div>
+            <div class="right_landing"> 
+                <div class="coupon">
+                    <h2>Coupon</h2>
+                    <div class="Coupon_data">
+                        <p>Enter your coupon code if you have one.</p>
+                        <input type="text" name="Coupon_code" id="Coupon_code" placeholder="Coupon Code">
+                        <button>APPLY</button>
+                    </div>                        
+                </div>
+                <div class="your_order">
+                    <h2>Your Order</h2>
+                    <div class="your_order_data">
+                        <div class="your_order_price">
+                            <table>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Total</th>
+                                </tr>
+                                <tr>
+                                    <td>Top Up T-Shirt x 1</td>
+                                    <td>$250.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Polo Shirt x 1</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="Cart">Cart Subtotal</td>
+                                    <td>$350.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="Order">Order Total</td>
+                                    <td class="Order">$350.00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details_summary_part">
+                            <details>
+                                <summary>Direct Bank Transfer</summary>
+                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                              </details>
+                              <details>
+                                <summary>Cheque Payment</summary>
+                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                              </details>
+                              <details>
+                                <summary>Paypal</summary>
+                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                              </details>
+                        </div>   
+                        <div class="order_btn">
+                            <a href="./place_order.html"><button class="btn4">PLACE ORDER</button></a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
+    <!-- End main -->
+    <footer>
+        <hr class="line">
+        <div class="footer_store">
+            <div class="footer_container_coulm1">
+                <ul>
+                    <li><h2>Navigations</h2></li>
+                    <li><p>Sell online</p></li>
+                    <li><p>Features</p></li>
+                    <li><p>Shopping cart</p></li>
+                    <li><p>Store builder</p> </li>
+                </ul>
+            </div>
+            <div class="footer_container_coulm2">
+                <ul>
+                    <li><p>Mobile commerce</p></li>
+                    <li><p>Dropshipping</p></li>
+                    <li><p>Website development</p></li>
+                </ul>
+            </div>
+            <div class="footer_container_coulm3">
+                <ul>
+                    <li><p>Point of sale</p></li>
+                    <li><p>Hardware</p></li>
+                    <li><p>Software</p></li>
+                </ul>
+            </div>
+            <div class="footer_container_coulm4">
+                <ul>
+                    <li><h2>Promo</h2></li>
+                    <li><a href="./index.html"><img  src="./images/hero_1.jpg" alt="hero_1"></a></li>
+                    <li class="paraghraph"><p >Finding Your Perfect Shoes</p>
+                        <div class="promo">Promo from nuary 15 — 25, 2019</div></li>
+                </ul>
+            </div>
+            <div class="footer_container_coulm5">
+                <ul>
+                    <li><h2>Contact Info</h2></li>
+                    <li><span><i class="fa-solid fa-location-dot"></i></span>
+                        <p class="location">Gaziemir St., Yakuplu, Beylikdüzü, Istanbul, Turkey</p></li>
+                    <li><span><i class="fa-solid fa-phone"></i></span>
+                    <span><p class="phone">+90 531 8127 671</p></span></li>
+                    <li><span><i class="fa-solid fa-envelope"></i></span>
+                    <a href="https://mail.google.com/mail"><p class="email">Belalsabry395@gmail.com</p></a></li>
+                    <li><h3>Subscribe</h3></li>
+                    <li><input type="email" name="email" id="email" placeholder="Email">
+                        <button>SEND</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                <p>Copyright ©2023 All rights reserved | This template is made with 
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    by <span class="owner">Belal Serag</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+</body>
+</html>
